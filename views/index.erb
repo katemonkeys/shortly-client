@@ -2,8 +2,11 @@
   <h1>Shortly</h1>
   <div class="navigation">
     <ul class="link">
-      <li><a ng-href="#" class="index selected">All Links</a></li>
-      <li><a ng-href="#/create" class="create">Shorten</a></li>
+      <li><a ng-href="#" ng-class="{selected: selected == 1}" ng-click="selected = 1">All Links</a>
+      </li>
+      <li><a ng-href="#/create" ng-class="{selected: selected == 2}" ng-click="selected = 2">Shorten</a>
+      </li>
+
     </ul>
 
 <!--       <input type="text" placeholder="type name here" ng-model="name"></input>
